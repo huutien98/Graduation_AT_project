@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/singUpFragment">
+
+
+    <fragment
+        android:id="@+id/singUpFragment"
+        tools:layout="@layout/fragment_sing_up"
+        android:label="singUpFragment"
+        android:name="com.example.graduation_at_project.signup.SingUpFragment">
+        <action
+            android:id="@+id/action_singUpFragment_to_signInFragment2"
+            app:destination="@id/signInFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:label="signInFragment"
+        android:name="com.example.graduation_at_project.signin.SignInFragment"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_chatDetailFragment"
+            app:destination="@id/chatDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatDetailFragment"
+        android:name="com.example.graduation_at_project.detailChat.ChatDetailFragment"
+        android:label="fragment_chat_detail"
+        tools:layout="@layout/fragment_chat_detail" />
+</navigation>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".signup.SingUpFragment">
+
+        <ImageView
+            android:id="@+id/imgChat"
+            app:layout_constraintBottom_toTopOf="@+id/signIn_edt_EmailUser"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+
+
+        <EditText
+            android:hint="email"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/signIn_edt_PasswordUser"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgChat"
+            android:id="@+id/signIn_edt_EmailUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:inputType="textPassword"
+            android:hint="password"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/tvHaveAccount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signIn_edt_EmailUser"
+            android:id="@+id/signIn_edt_PasswordUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            app:layout_constraintBottom_toTopOf="@+id/signIn_btn_signup"
+            android:id="@+id/tvHaveAccount"
+            android:text="Already have account, signIn"
+            app:layout_constraintTop_toBottomOf="@+id/signIn_edt_PasswordUser"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            app:layout_constraintBottom_toTopOf="@+id/signIn_btn_google"
+            android:text="signup"
+            android:id="@+id/signIn_btn_signup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHaveAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            app:layout_constraintBottom_toTopOf="@+id/signwithphone"
+            android:text="google"
+            android:id="@+id/signIn_btn_google"
+            app:layout_constraintEnd_toStartOf="@+id/btnfacebook"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signIn_btn_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            app:layout_constraintBottom_toTopOf="@+id/signwithphone"
+            android:text="facebook"
+            android:id="@+id/btnfacebook"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/signIn_btn_google"
+            app:layout_constraintTop_toBottomOf="@+id/signIn_btn_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/signwithphone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signIn_btn_google"
+            android:text="sign up with phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

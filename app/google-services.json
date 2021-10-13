@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "646595497798",
+    "project_id": "graduation-at-project",
+    "storage_bucket": "graduation-at-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646595497798:android:d720ed3d962aec60125f47",
+        "android_client_info": {
+          "package_name": "com.example.graduation_at_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "646595497798-ltlbm4pi0nrn5ffkqqsmhhrtgscqi71j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYtMHow9BJ_BeTAqSWtsekqLX3k_PgJrU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "646595497798-ltlbm4pi0nrn5ffkqqsmhhrtgscqi71j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
